@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b1036;
+    color: #0a0903;
+    font-family: quicksand;
+}
+
+h2 {
+    text-align: center;
+    font-size: 7vw;
+    font-family: raleway;
+}
+
+.resume__button:hover {
+    background-color: #0a0903;
+}
+
+.resume__button a:hover {
+    color: #f5f5f5;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.flex-align-items {
+    display: flex;
+    align-items: center;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.08) inset;
+    -webkit-box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.08) inset;
+    -moz-box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.08) inset;
+}
+
+/* navbar */
+
+.navbar, .navbar-space {
+    background-color: #0a0903;
+    width: 100%;
+    height: 15vw;
+}
+
+.navbar-space {
+    background-color: #0b1036;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.navbar__wrapper {
+    height: 100%;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.navbar__element {
+    color: #f5f5f5;
+    justify-content: center;
+    padding: 0.2em;
+    height: 15vw;
+    aspect-ratio: 1.67 / 1;
+    font-size: 4vw;
+}
+
+.navbar__element:hover {
+    background-color: #4b4b4b;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+        "photo"
+        "name"
+        "description"
+        "skills"
+        "resume"
+        "projects"
+        "contact";
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.grid-wrapper__item {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+/* photo */
+
+#photo {
+    grid-area: photo;
+    background-color: #0b1036;
+}
+
+#photo img {
+    border: 4px solid #f5f5f5;
+    border-radius: 50%;
+    width: 99%;
+    aspect-ratio: 1 / 1;
+}
+
+/* name */
+
+#name {
+    grid-area: name;
+    justify-content: right;
+    text-align: right;
+    font-size: 12vw;
+    font-family: raleway;
+}
+
+#name span {
+    color: #1F2D9F;
+}
+
+/* description */
+
+#description {
+    grid-area: description;
+    flex-flow: column;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+#description p {
+    font-size: 5vw;
+}
+
+
+/* skills */
+
+#skills {
+    grid-area: skills;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.logos {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.logos img {
+    width: 25%;
+}
+
+
+/* resume */
+
+#resume {
+    grid-area: resume;
+}
+
+.resume__button {
+    border: 3px solid #0a0903;
+    border-radius: 10px;
+}
+
+.resume__button a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: #0a0903;
+}
+
+/* projects */
+
+#projects {
+    grid-area: projects;
+    flex-flow: column;
+    padding: 1em 0;
+}
+
+.projects-grid-wrapper__card {
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding-top: 1em;
+    gap: 1em;
+    width: 100%;
+}
+
+.card {
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3vw;
+    padding: 1em;
+}
+
+.card__thumb {
+    border: 1px solid #0a0903;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* contact */
+
+#contact {
+    grid-area: contact;
+    flex-flow: column;
+    justify-content: space-around;
+    font-size: 3vw;
+    padding: 1em 0;
+}
+
+.email {
+    text-align: center;
+}
+
+.links {
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1em;
+}
+
+#gmail {
+    width: 10vw;
+}
+
+#linkedin {
+    width: 30vw;
+}
+
+#gitlab {
+    width: 40vw;
+}
+
+@media only screen and (max-width: 360spx){
+    #photo img {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: unset;
+    }
+
+    #name {
+        font-size: 45px;
+    }
+
+    #description p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 185px;
+        text-align: center;
+        font-size: medium;
+    }
+
+    #contact {
+        font-size: 100%;
+    }
+
+    #gmail {
+        width: 50px;
+    }
+
+    #linkedin {
+        width: 100px;
+    }
+
+    #gitlab {
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .navbar, .navbar-space {
+        height: 7vw;
+    }
+
+    .navbar__element {
+        height: 7vw;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: revert;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "photo photo name"
+            "description description skills"
+            "resume resume resume"
+            "projects projects projects"
+            "contact contact contact"; 
+    }
+
+    #photo img {
+        width: 50%;
+    }
+
+    #name {
+        font-size: 4.8vw;
+    }
+
+    #description p {
+        font-size: 2.5vw;
+    }
+
+    .card {
+        width: 185px;
+        text-align: center;
+        font-size: medium;
+    }
+
+    #contact {
+        font-size: 100%;
+    }
+
+    #gmail {
+        width: 50px;
+    }
+
+    #linkedin {
+        width: 100px;
+    }
+
+    #gitlab {
+        width: 150px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .navbar, .navbar-space {
+        height: 4vw;
+    }
+
+    .navbar__wrapper {
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .navbar__element {
+        height: 4vw;
+        font-size: 18px;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "photo photo . . name name"
+            ". . description description description skills"
+            ". . resume resume resume skills"
+            ". projects projects projects projects projects"
+            "contact contact contact contact contact contact";
+        /* border: 5px solid #f5f5f5;
+        border-radius: 10px; */
+    }
+
+    #photo img {
+        width: 100%;
+    }
+
+    #name {
+        font-size: 4.5vw;
+    }
+
+    #description p {
+        font-size: 18px;
+    }
+
+    #contact {
+        font-size: 100%;
+        flex-flow: row;
+    }
+
+    .email {
+        margin-left: 1em;
+    }
+
+    .links {
+        width: 50vw;
+        justify-content: space-evenly;
+    }
+}

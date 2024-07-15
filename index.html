@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+        <link rel="stylesheet" href="style.css">
+        <title>david del rio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class="navbar__wrapper flex-align-items">
+                    <li>
+                        <a href="#description">
+                            <div class="navbar__element border-box flex-align-items">about me</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume">
+                            <div class="navbar__element border-box flex-align-items">resume</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <div class="navbar__element border-box flex-align-items">projects</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <div class="navbar__element border-box flex-align-items">contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-space"></div>
+        </header>
+        <main class="grid-wrapper">
+            <section class="grid-wrapper__item flex-align-items" id="photo">
+                <img src="icons/image.JPG" alt="photo">
+            </section>
+            <section class="grid-wrapper__item flex-align-items box-shadow" id="name">
+                <h1>
+                    i'm <br>
+                    <span>d</span>avid <br>
+                    <span>d</span>el <span>r</span>io
+                </h1>
+            </section>
+            <section class="grid-wrapper__item border-box flex-align-items box-shadow" id="description">
+                <h2>about me</h2>
+                <p>
+                    I'm an aspiring software developer seeking opportunities in the tech industry. I first dabbled in coding and command line tools as an
+                    undergraduate in UP Diliman. After graduating in 2023, I enrolled in Uplift Code Camp to have a more serious grasp over the skills and
+                    knowledge desired in the industry.
+                </p>
+                <p>
+                    In my free time, you can often find me in the climbing gym or gaming on the PS5.
+                </p>
+            </section>
+            <section class="grid-wrapper__item border-box flex-align-items box-shadow" id="skills">
+                <h2>skills</h2>
+                <div class="logos flex-align-items">
+                    <img src="icons/css-3.svg" alt="css3">
+                    <img src="icons/html-5.svg" alt="html5">
+                </div>
+            </section>
+            <section class="grid-wrapper__item flex-align-items box-shadow" id="resume">
+                <div class="resume__button">
+                    <a href="icons/David-Del-Rio-resume.pdf" download="David-Del-Rio-resume">download resume</a>
+                </div>
+            </section>
+            <section class="grid-wrapper__item flex-align-items box-shadow" id="projects">
+                <h2>projects</h2>
+                <div class="projects-grid-wrapper__card flex-align-items">
+                    <div class="card">
+                        <img src="icons/pasuyo-center.jpg" alt="pasuyo center homepage" class="card__thumb border-box">
+                        <h3>Pasuyo Center Homepage</h3>
+                        <p>description</p>
+                        <a href="https://gitlab.com/uplift-code-camp/students/batch-19/david-ryan-del-rio/homeworks/">View Git Repo</a>
+                    </div>
+                    <div class="card flex-align-items">
+                        <img src="icons/e-commerce.png" alt="e commerce homepage" class="card__thumb border-box">
+                        <h3>E-Commerce Homepage</h3>
+                        <p>description</p>
+                        <a href="https://gitlab.com/uplift-code-camp/students/batch-19/david-ryan-del-rio/homeworks/">View Git Repo</a>
+                    </div>
+                </div>
+            </section>
+            <section class="grid-wrapper__item border-box flex-align-items box-shadow" id="contact">
+                <div class="email">
+                    <h2>want to contact me?</h2>
+                    <p>davidryandelrio@gmail.com</p>
+                </div>
+                <div class="links flex-align-items">
+                    <a href="mailto:davidryandelrio@gmail.com">
+                        <img src="icons/Gmail_icon_(2020).svg.webp" alt="gmail" id="gmail">
+                    </a>
+                    <a href="https://gitlab.com/dropie">
+                        <img src="icons/gitlab-logo-100.svg" alt="gitlab" id="gitlab">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dddelrio">
+                        <img src="icons/LinkedIn_Logo.svg" alt="linkedin" id="linkedin">
+                    </a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
